@@ -253,7 +253,7 @@ void setTime(int hr,int min,int sec,int dy, int mnth, int yr){
 	setTime(makeTime(tm));
 }
 
-adjustTime(long adjustment) {
+void adjustTime(long adjustment) {
 	time_t t = rtc_get();
 	t += adjustment;
 	rtc_set(t);
